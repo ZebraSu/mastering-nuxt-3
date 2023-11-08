@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build" # 或者 "yarn build"，取决于您使用的包管理器
+  publish = "dist" # Nuxt.js构建后的输出目录
+  functions = "functions" # 如果您使用Netlify Functions，这里指定函数的目录
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server" # 指向您的Netlify Function
+  status = 200

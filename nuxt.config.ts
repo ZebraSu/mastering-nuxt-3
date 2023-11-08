@@ -23,4 +23,7 @@ export default defineNuxtConfig({
     // '@nuxtjs/supabase',
     // '@pinia/nuxt',
   ],
+  buildModules: [ 
+    '@nuxtjs/netlify-files',
+  ]
 });
